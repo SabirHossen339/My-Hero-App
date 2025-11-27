@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaGooglePlay } from "react-icons/fa6";
 import { FaAppStoreIos } from "react-icons/fa";
+import { Link } from 'react-router';
 
 const Home = () => {
   const [apps, setApps] = useState([]);
@@ -26,9 +27,9 @@ const Home = () => {
         <p className='text-center items-center mt-3 p-3 text-gray-500'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
       </div>
       <div className='flex flex-wrap justify-center mt-5 items-center'>
-        <a href="https://play.google.com/store/games?hl=en"><button className='btn text-white text-lg bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 rounded-xl'><FaGooglePlay />Google Play</button></a>
+        <a href="https://play.google.com/store/games?hl=en"><button className='btn text-white text-lg bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'><FaGooglePlay />Google Play</button></a>
 
-        <a href="https://www.apple.com/app-store/"><button className='btn text-white text-lg mx-5 items-center bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 rounded-xl'><FaAppStoreIos />App Store</button></a>
+        <a href="https://www.apple.com/app-store/"><button className='btn text-white text-lg mx-5 items-center bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'><FaAppStoreIos />App Store</button></a>
       </div>
 
 
@@ -74,16 +75,47 @@ const Home = () => {
 
         {apps.length === 0 ? (
           <div className="text-center py-12">
-            <span className="loading loading-infinity loading-xl text-primary"></span>
-            <p className='mt-4 text-primary tetx-lg font-bold '>Loading......</p>
+            <span className="loading loading-infinity loading-4xl text-primary"></span>
+            <p className='mt-4 text-primary tetx-2xl font-bold '>Loading......</p>
           </div>
         ) : (
-          <div>
+          <div className='mb-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5'>
+            {apps.map((app) => (
+              <Link
+                key={app.id}
+                to={'/apps/${app.id}'}
+                className='card bg-gray-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'>
+                <figure className='p-3'>
+                  <img className='rounded-xl w-full h-40 object-cover' src={app.image} alt="" />
+                </figure>
+                <div className='p-3 items-center '>
+                  <h3 className='text-lg font-semibold'>{app.title}</h3>
+                  <p className='text-gray-500 mt-2'>{app.companyName}</p>
+                  <div className='flex justify-between items-center mt-3 mb-3'>
+                    <div className='flex gap-2'>
+                      <span ><img className='w-[21px]' src="/assets/icon-ratings.png" alt="" /></span>
+                      <span className='text-orange-500 font-bold text-[17px]'>{app.ratingAvg}</span>
+                    </div>
 
+                    <div className='flex gap-2'>
+                      <span ><img className='w-[21px]' src="/assets/icon-downloads.png" alt="" /></span>
+                      <span className='text-green-600 font-bold text-[17px]'>{(app.downloads / 100000).toFixed(1)}M</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         )}
       </section>
-
+      <div className='flex justify-center mt-5 mb-10'>
+        <Link
+          to="/apps"
+          className='btn bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 text-white text-lg rounded-xl mt-3 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'
+        >
+          Show All Apps
+        </Link>
+      </div>
     </div>
   );
 };
