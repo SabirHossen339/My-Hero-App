@@ -5,6 +5,7 @@ import {
 import Root from '../../pages/Root/Root';
 import Error from '../../pages/Root/Error/Error';
 import Home from '../../pages/Home/Home';
+import AllApps from '../../pages/AllApps/AllApps';
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,14 @@ export const router = createBrowserRouter([
         index: true,
         path: "/",
         Component: Home
+      },
+      {
+        index: true,
+        path: "/apps",
+        Component: AllApps
+      },
+      {
+        
       }
     ]
   },

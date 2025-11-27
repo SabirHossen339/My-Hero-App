@@ -79,16 +79,16 @@ const Home = () => {
             <p className='mt-4 text-primary tetx-2xl font-bold '>Loading......</p>
           </div>
         ) : (
-          <div className='mb-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5'>
+          <div className='mb-5 p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5'>
             {apps.map((app) => (
               <Link
                 key={app.id}
                 to={'/apps/${app.id}'}
-                className='card bg-gray-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'>
+                className='card bg-gray-100 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'>
                 <figure className='p-3'>
-                  <img className='rounded-xl w-full h-40 object-cover' src={app.image} alt="" />
+                  <img className='rounded-2xl w-full h-full object-cover' src={app.image} alt="" />
                 </figure>
-                <div className='p-3 items-center '>
+                <div className='p-5 items-center '>
                   <h3 className='text-lg font-semibold'>{app.title}</h3>
                   <p className='text-gray-500 mt-2'>{app.companyName}</p>
                   <div className='flex justify-between items-center mt-3 mb-3'>

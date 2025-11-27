@@ -4,9 +4,9 @@ import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const links = <>
-    <Link to='/'><li className="m-2 text-xl font-semibold">Home</li></Link>
-    <Link to=''><li className="m-2 text-xl font-semibold">Apps</li ></Link>
-    <Link to=''><li className="m-2 text-xl font-semibold">Installation</li ></Link>
+    <Link to='/'><li className="m-2 text-xl font-semibold transition-all hover:-translate-y-1">Home</li></Link>
+    <Link to='/apps'><li className="m-2 text-xl font-semibold transition-all hover:-translate-y-1">Apps</li ></Link>
+    <Link to=''><li className="m-2 text-xl font-semibold transition-all hover:-translate-y-1">Installation</li ></Link>
 
   </>
   return (
@@ -22,8 +22,10 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <img className='w-[50px]' src="/assets/logo.png" alt="" />
-        <a className="font-bold md:text-2xl lg:text-2xl">Hero.IO</a>
+        <Link to="/" className='flex items-center  transition-all hover:-translate-y-1'>
+          <img className='w-[50px]' src="/assets/logo.png" alt="" />
+          <h1 className="font-bold md:text-2xl lg:text-2xl">Hero.IO</h1>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -31,7 +33,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href='https://github.com/SabirHossen339/My-Hero-App' className="btn rounded-xl text-white bg-linear-to-l from-purple-400 via-purple-500 to-purple-600"><FaGithub />Contribute</a>
+        <a href='https://github.com/SabirHossen339/My-Hero-App' className="btn rounded-xl text-white bg-linear-to-l from-purple-400 via-purple-500 to-purple-600 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"><FaGithub />Contribute</a>
       </div>
     </div>
   );

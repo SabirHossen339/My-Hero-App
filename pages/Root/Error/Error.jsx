@@ -18,7 +18,7 @@ const Error = () => {
         The page you are looking for is not available.
       </p>
 
-      <Link to="/"><button className="btn mt-6 bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 text-white px-6 py-2 rounded-xl hover:bg-[#5848e6] transition text-lg font-semibold">
+      <Link to="/"><button className="btn mt-6 bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 text-white px-6 py-2 rounded-xl hover:bg-[#5848e6] transition text-lg font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
         Go Back!
       </button></Link>
     </div>
