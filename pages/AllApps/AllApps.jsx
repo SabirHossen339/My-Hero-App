@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const AllApps = () => {
 
@@ -8,26 +8,25 @@ const AllApps = () => {
   const [sort, setSort] = useState("");
 
   useEffect(() => {
-    fetch("/public/apps.json")
+    fetch("/apps.json")
       .then(res => res.json())
       .then(setApps)
   }, [])
 
   const filtered = apps
-    .filter(apps => apps.title.toLowerCase().includes(q.toLowerCase()))
+    .filter(app => app.title.toLowerCase().includes(q.toLowerCase()))
     .sort((a, b) => {
-      if (sort === "high-low")
-        return b.downloads - a.downloads;
-      if (sort === "low-high")
-        return a.downloads - b.downloads;
+      if (sort === "high-low") return b.downloads - a.downloads;
+      if (sort === "low-high") return a.downloads - b.downloads;
       return 0;
-    })
+    });
 
   return (
     <div className='p-5'>
-      <h1 className='text-purple-700 text-xl md:text-4xl lg-text-4xl text-center font-bold mt-5'>Our All Applications</h1>
-      <p className='text-gray-600 text-md md:text-lg lg-text-lg font-semibold mt-3 mb-8 text-center '>Explore All Apps on the Market developed by us. We code for Millions</p>
-      <div className='flex justify-between items-center mb-5'>
+      <h1 className='text-purple-700 text-xl md:text-5xl lg:text-5xl text-center font-bold mt-5'>Our All Applications</h1>
+      <p className='text-gray-600 text-md md:text-lg lg-text-lg font-semibold mt-3 mb-8 text-center'>Explore All Apps on the Market developed by us. We code for Millions</p>
+
+      <div className='flex justify-between items-center mb-5 px-5'>
         <div className='text-purple-700 text-lg md:text-xl lg-text-xl font-bold'>{filtered.length} Apps Found</div>
 
         <div className='flex gap-2 items-center'>
@@ -46,23 +45,28 @@ const AllApps = () => {
             No App Found
           </div>
         ) : (
-          filtered.map(apps => (
-            <Link key={apps.id} to={'/apps/${apps.id}'} className='card  bg-gray-100 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'>
+          filtered.map(app => (
+            <Link
+              key={app.id}
+              to={`/apps/${app.id}`}
+              className='card bg-gray-100 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'
+            >
               <figure className='p-3'>
-                <img className='rounded-2xl w-full h-full object-cover' src={apps.image} alt="" />
+                <img className='rounded-2xl w-full h-full object-cover' src={app.image} alt="" />
               </figure>
-              <div className='p-5 items-center '>
-                <h3 className='text-lg font-semibold'>{apps.title}</h3>
-                <p className='text-gray-500 mt-2'>{apps.companyName}</p>
+              <div className='p-5 items-center'>
+                <h3 className='text-lg font-semibold'>{app.title}</h3>
+                <p className='text-gray-500 mt-2'>{app.companyName}</p>
+
                 <div className='flex justify-between items-center mt-3 mb-3'>
                   <div className='flex gap-2'>
-                    <span ><img className='w-[21px]' src="/assets/icon-ratings.png" alt="" /></span>
-                    <span className='text-orange-500 font-bold text-[17px]'>{apps.ratingAvg}</span>
+                    <img className='w-[21px]' src="/assets/icon-ratings.png" alt="" />
+                    <span className='text-orange-500 font-bold text-[17px]'>{app.ratingAvg}</span>
                   </div>
 
                   <div className='flex gap-2'>
-                    <span ><img className='w-[21px]' src="/assets/icon-downloads.png" alt="" /></span>
-                    <span className='text-green-600 font-bold text-[17px]'>{(apps.downloads / 100000).toFixed(1)}M</span>
+                    <img className='w-[21px]' src="/assets/icon-downloads.png" alt="" />
+                    <span className='text-green-600 font-bold text-[17px]'>{(app.downloads / 100000).toFixed(1)}M</span>
                   </div>
                 </div>
               </div>

@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
+    <div className=''>
       <footer className="footer footer-horizontal footer-center bg-[#001931] text-neutral-content p-10">
         <aside>
           <img className='w-[100px]' src="/assets/logo.png" alt="" />
-          <p className="font-bold">
+          <p className="font-bold text-2xl">
             Hero.IO
           </p>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

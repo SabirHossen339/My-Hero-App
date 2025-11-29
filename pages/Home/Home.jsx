@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaGooglePlay } from "react-icons/fa6";
 import { FaAppStoreIos } from "react-icons/fa";
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [apps, setApps] = useState([]);
@@ -27,9 +27,9 @@ const Home = () => {
         <p className='text-center items-center mt-3 p-3 text-gray-500'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
       </div>
       <div className='flex flex-wrap justify-center mt-5 items-center'>
-        <a href="https://play.google.com/store/games?hl=en"><button className='btn text-white text-lg bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'><FaGooglePlay />Google Play</button></a>
+        <a href="https://play.google.com/store/games?hl=en"><button className='btn text-white text-lg bg-linear-to-l from-purple-400 via-purple-500 to-purple-800  hover:from-purple-500 hover:via-purple-600 hover:to-purple-900 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'><FaGooglePlay />Google Play</button></a>
 
-        <a href="https://www.apple.com/app-store/"><button className='btn text-white text-lg mx-5 items-center bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'><FaAppStoreIos />App Store</button></a>
+        <a href="https://www.apple.com/app-store/"><button className='btn text-white text-lg mx-5 items-center bg-linear-to-l from-purple-400 via-purple-500 to-purple-800  hover:from-purple-500 hover:via-purple-600 hover:to-purple-900 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'><FaAppStoreIos />App Store</button></a>
       </div>
 
 
@@ -83,7 +83,8 @@ const Home = () => {
             {apps.map((app) => (
               <Link
                 key={app.id}
-                to={'/apps/${app.id}'}
+                to={`/apps/${app.id}`}
+
                 className='card bg-gray-100 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'>
                 <figure className='p-3'>
                   <img className='rounded-2xl w-full h-full object-cover' src={app.image} alt="" />
@@ -111,7 +112,7 @@ const Home = () => {
       <div className='flex justify-center mt-5 mb-10'>
         <Link
           to="/apps"
-          className='btn bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 text-white text-lg rounded-xl mt-3 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'
+          className='btn bg-linear-to-l from-purple-400 via-purple-500 to-purple-800  hover:from-purple-500 hover:via-purple-600 hover:to-purple-900 text-white text-lg rounded-xl mt-3 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1'
         >
           Show All Apps
         </Link>
