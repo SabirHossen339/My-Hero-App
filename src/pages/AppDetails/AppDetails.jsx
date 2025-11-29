@@ -74,7 +74,7 @@ const AppDetails = () => {
             onClick={handleInstall}
             className={`btn px-6 py-2 rounded-xl text-lg font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 ${installed
               ? "bg-linear-to-l from-purple-500 via-purple-600 to-purple-900 cursor-not-allowed text-white"
-              : "bg-linear-to-l from-purple-400 via-purple-500 to-purple-800 hover:from-purple-500 hover:via-purple-600 hover:to-purple-900 text-white"
+              : "bg-linear-to-l from-purple-400 via-purple-500 to-purple-800  text-white"
               }`}
           >
             {installed ? "Installed" : "Install"}

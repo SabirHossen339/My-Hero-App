@@ -5,7 +5,7 @@ const Footer = () => {
     <div className=''>
       <footer className="footer footer-horizontal footer-center bg-[#001931] text-neutral-content p-10">
         <aside>
-          <img className='w-[100px]' src="/assets/logo.png" alt="" />
+          <img className='w-[100px]' src="/public/assets/logo.png" alt="" />
           <p className="font-bold text-2xl">
             Hero.IO
           </p>

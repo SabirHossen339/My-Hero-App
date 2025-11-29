@@ -5,7 +5,7 @@ import App from './App.jsx'
 import {
   RouterProvider,
 } from "react-router-dom";
-import { router } from '../components/Route/Route.jsx';
+import { router } from '../src/components/Route/Route.jsx';
 
 
 

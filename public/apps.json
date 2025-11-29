@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/assets/demo-app (1).webp",
+    "image": "../public/assets/demo-app (1).webp",
     "title": "Daily Planner",
     "companyName": "Productivity Inc",
     "description": "Organize your daily tasks, set reminders, and boost your productivity with our intuitive planner. Track your habits, manage your schedule, and achieve your goals with ease.",
@@ -34,7 +34,7 @@
   },
   {
     "id": 2,
-    "image": "/assets/demo-app (2).webp",
+    "image": "../public/assets/demo-app (2).webp",
     "title": "Plant Care Pro",
     "companyName": "GreenThumb Studios",
     "description": "Keep your plants healthy and thriving with personalized care reminders, watering schedules, and expert gardening tips. Perfect for beginners and experienced gardeners.",
@@ -67,7 +67,7 @@
   },
   {
     "id": 3,
-    "image": "/assets/demo-app (3).webp",
+    "image": "../public/assets/demo-app (3).webp",
     "title": "Todoist Pro",
     "companyName": "TaskMaster Ltd",
     "description": "The ultimate task management app with powerful features for organizing projects, collaborating with teams, and tracking progress across all your devices.",
@@ -100,7 +100,7 @@
   },
   {
     "id": 4,
-    "image": "/assets/demo-app (4).webp",
+    "image": "../public/assets/demo-app (4).webp",
     "title": "FreshFood Recipes",
     "companyName": "Culinary Apps",
     "description": "Discover thousands of delicious recipes with step-by-step instructions, meal planning tools, and grocery lists. Eat healthy and save time in the kitchen.",
@@ -133,7 +133,7 @@
   },
   {
     "id": 5,
-    "image": "/assets/demo-app (5).webp",
+    "image": "../public/assets/demo-app (5).webp",
     "title": "Happy Habits",
     "companyName": "Wellness Tech",
     "description": "Build positive habits and break bad ones with our science-backed habit tracker. Get reminders, track streaks, and celebrate your progress every day.",
@@ -166,7 +166,7 @@
   },
   {
     "id": 6,
-    "image": "/assets/demo-app (6).webp",
+    "image": "../public/assets/demo-app (6).webp",
     "title": "MindFlow Meditation",
     "companyName": "Zen Apps",
     "description": "Find peace and clarity with guided meditations, breathing exercises, and sleep stories. Reduce stress, improve focus, and sleep better every night.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 7,
-    "image": "/assets/demo-app (1).webp",
+    "image": "../public/assets/demo-app (1).webp",
     "title": "Budget Buddy",
     "companyName": "FinTech Solutions",
     "description": "Take control of your finances with smart budgeting tools, expense tracking, and savings goals. Get insights into your spending and plan for the future.",
@@ -232,7 +232,7 @@
   },
   {
     "id": 8,
-    "image": "/assets/demo-app (2).webp",
+    "image": "../public/assets/demo-app (2).webp",
     "title": "FitLife Tracker",
     "companyName": "HealthTech Inc",
     "description": "Track your workouts, monitor your nutrition, and reach your fitness goals with personalized plans and expert guidance. Stay motivated and healthy.",
@@ -265,7 +265,7 @@
   },
   {
     "id": 9,
-    "image": "/assets/demo-app (3).webp",
+    "image": "../public/assets/demo-app (3).webp",
     "title": "Language Master",
     "companyName": "LinguaTech",
     "description": "Learn new languages with interactive lessons, real conversations, and AI-powered feedback. Master vocabulary, grammar, and pronunciation at your own pace.",
@@ -298,7 +298,7 @@
   },
   {
     "id": 10,
-    "image": "/assets/demo-app (4).webp",
+    "image": "../public/assets/demo-app (4).webp",
     "title": "PhotoPro Editor",
     "companyName": "Creative Studios",
     "description": "Edit photos like a professional with powerful tools, filters, and effects. Enhance your images, create stunning collages, and share your creativity.",
@@ -331,7 +331,7 @@
   },
   {
     "id": 11,
-    "image": "/assets/demo-app (5).webp",
+    "image": "../public/assets/demo-app (5).webp",
     "title": "Travel Explorer",
     "companyName": "WanderLust Apps",
     "description": "Discover amazing destinations, plan your trips, and book accommodations all in one place. Get travel tips, local guides, and exclusive deals.",
@@ -364,7 +364,7 @@
   },
   {
     "id": 12,
-    "image": "/assets/demo-app (6).webp",
+    "image": "../public/assets/demo-app (6).webp",
     "title": "Study Smart",
     "companyName": "EduTech Pro",
     "description": "Ace your exams with smart study tools, flashcards, practice tests, and learning analytics. Stay organized and track your academic progress.",
@@ -397,7 +397,7 @@
   },
   {
     "id": 13,
-    "image": "/assets/demo-app (1).webp",
+    "image": "../public/assets/demo-app (1).webp",
     "title": "Music Stream Pro",
     "companyName": "AudioWave",
     "description": "Stream millions of songs, create playlists, and discover new music tailored to your taste. Enjoy offline downloads and high-quality audio.",
@@ -430,7 +430,7 @@
   },
   {
     "id": 14,
-    "image": "/assets/demo-app (2).webp",
+    "image": "../public/assets/demo-app (2).webp",
     "title": "Shopping Hub",
     "companyName": "RetailTech",
     "description": "Shop from thousands of brands with exclusive deals, fast delivery, and secure payments. Browse, compare, and save on everything you need.",
@@ -463,7 +463,7 @@
   },
   {
     "id": 15,
-    "image": "/assets/demo-app (3).webp",
+    "image": "../public/assets/demo-app (3).webp",
     "title": "Weather Live",
     "companyName": "ClimateTech",
     "description": "Get accurate weather forecasts, severe weather alerts, and detailed radar maps. Plan your day with hourly and weekly weather updates.",
@@ -496,7 +496,7 @@
   },
   {
     "id": 16,
-    "image": "/assets/demo-app (4).webp",
+    "image": "../public/assets/demo-app (4).webp",
     "title": "Secure Vault",
     "companyName": "CyberGuard",
     "description": "Protect your passwords, documents, and sensitive data with military-grade encryption. Secure cloud backup and biometric authentication included.",
@@ -529,7 +529,7 @@
   },
   {
     "id": 17,
-    "image": "/assets/demo-app (5).webp",
+    "image": "../public/assets/demo-app (5).webp",
     "title": "NewsHub Daily",
     "companyName": "MediaStream",
     "description": "Stay informed with breaking news, personalized feeds, and in-depth articles from trusted sources worldwide. Read, watch, and listen on the go.",
@@ -562,7 +562,7 @@
   },
   {
     "id": 18,
-    "image": "/assets/demo-app (6).webp",
+    "image": "../public/assets/demo-app (6).webp",
     "title": "Game Central",
     "companyName": "PlayZone",
     "description": "Discover and play thousands of games across all genres. Join tournaments, compete with friends, and unlock exclusive rewards and achievements.",

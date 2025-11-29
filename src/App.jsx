@@ -1,6 +1,6 @@
-import Footer from '../components/Footer/Footer'
-import Navbar from '../components/Navbar/Navbar'
-import Error from '../pages/Root/Error/Error'
+import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import Error from './pages/Root/Error/Error'
 import './App.css'
 
 function App() {

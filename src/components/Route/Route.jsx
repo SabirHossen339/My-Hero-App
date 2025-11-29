@@ -2,12 +2,12 @@ import React from 'react';
 import {
   createBrowserRouter,
 } from "react-router-dom";
-import Root from '../../pages/Root/Root';
-import Error from '../../pages/Root/Error/Error';
-import Home from '../../pages/Home/Home';
-import AllApps from '../../pages/AllApps/AllApps';
-import AppDetails from '../../pages/AppDetails/APpDetails';
-import Installation from '../../pages/Installation/Installation';
+import Root from './../../pages/Root/Root';
+import Error from './../../pages/Root/Error/Error';
+import Home from './../../pages/Home/Home';
+import AllApps from './../../pages/AllApps/AllApps';
+import AppDetails from './../../pages/AppDetails/AppDetails';
+import Installation from './../../pages/Installation/Installation';
 
 
 export const router = createBrowserRouter([
