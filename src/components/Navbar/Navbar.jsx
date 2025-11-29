@@ -23,7 +23,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className='flex items-center  transition-all hover:-translate-y-1'>
-          <img className='w-[70px]' src="/public/assets/logo.png" alt="" />
+          <img className='w-[70px]' src="/assets/logo.png" alt="" />
           <h1 className="font-bold text-purple-700 md:text-2xl lg:text-2xl">Hero.IO</h1>
         </Link>
       </div>

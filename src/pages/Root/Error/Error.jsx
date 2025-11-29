@@ -6,7 +6,7 @@ const Error = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#f5f7fa] text-center px-4">
       <img
         className="w-[350px] mb-6"
-        src="/public/assets/error-404.png"
+        src="/assets/error-404.png"
         alt="404"
       />
 

@@ -29,7 +29,7 @@ const Installation = () => {
     <div className="p-8">
       <h2 className="text-2xl font-semibold mb-4">Your Installed Apps</h2>
       {installedDetails.length === 0 ? (
-        <div className="text-gray-500 flex justify-center mb-17 mt-5"><img src="/public/assets/App-Error.png" alt="" /></div>
+        <div className="text-gray-500 flex justify-center mb-17 mt-5"><img src="/assets/App-Error.png" alt="" /></div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {installedDetails.map(app => (

@@ -7,7 +7,7 @@ const Home = () => {
   const [apps, setApps] = useState([]);
 
   useEffect(() => {
-    fetch("/public/apps.json")
+    fetch("/apps.json")
       .then((res => res.json()))
       .then((data) => {
         console.log(data);
@@ -35,7 +35,7 @@ const Home = () => {
 
       <div>
         <div className='px-3'>
-          <img className='w-[550px] mt-8 mx-auto ' src="/public/assets/hero.png" alt="" />
+          <img className='w-[550px] mt-8 mx-auto ' src="/assets/hero.png" alt="" />
         </div>
 
         <div className='p-8 bg-linear-to-l from-purple-600 via-purple-700 to-purple-800'>
@@ -94,12 +94,12 @@ const Home = () => {
                   <p className='text-gray-500 mt-2'>{app.companyName}</p>
                   <div className='flex justify-between items-center mt-3 mb-3'>
                     <div className='flex gap-2'>
-                      <span ><img className='w-[21px]' src="/public/assets/icon-ratings.png" alt="" /></span>
+                      <span ><img className='w-[21px]' src="/assets/icon-ratings.png" alt="" /></span>
                       <span className='text-orange-500 font-bold text-[17px]'>{app.ratingAvg}</span>
                     </div>
 
                     <div className='flex gap-2'>
-                      <span ><img className='w-[21px]' src="/public/assets/icon-downloads.png" alt="" /></span>
+                      <span ><img className='w-[21px]' src="/assets/icon-downloads.png" alt="" /></span>
                       <span className='text-green-600 font-bold text-[17px]'>{(app.downloads / 100000).toFixed(1)}M</span>
                     </div>
                   </div>
